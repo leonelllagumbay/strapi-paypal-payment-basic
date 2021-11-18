@@ -1,0 +1,39 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/",
+      "handler": "strapi-paypal-basic.index",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/success",
+      "handler": "strapi-paypal-basic.success",
+      "config": {
+        "policies": [],
+        "prefix": ""
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/cancel",
+      "handler": "strapi-paypal-basic.cancel",
+      "config": {
+        "policies": [],
+        "prefix": ""
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/pay",
+      "handler": "strapi-paypal-basic.pay",
+      "config": {
+        "policies": [],
+        "prefix": ""
+      }
+    }
+  ]
+}
